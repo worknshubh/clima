@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/rubik_medium"
@@ -42,7 +42,7 @@
         app:cardCornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/user_name">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                 android:layout_marginStart="36dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/rubik"
-                android:text="16th May 2004"
+                android:text="-"
                 android:textColor="#C4C4C4"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/rubik_medium"
-                android:text="18 C"
+                android:text="-"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="@+id/weatherinfo"
@@ -147,7 +147,7 @@
                     android:fontFamily="@font/rubik_medium"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="10 m/s"
+                    android:text="-"
                     android:textColor="@color/white"
                     android:textSize="14sp" />
 
@@ -184,7 +184,7 @@
                     android:fontFamily="@font/rubik_medium"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="98%"
+                    android:text="-"
                     android:textColor="@color/white"
                     android:textSize="14sp" />
 
@@ -221,7 +221,7 @@
                     android:fontFamily="@font/rubik_medium"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="100%"
+                    android:text="-"
                     android:textColor="@color/white"
                     android:textSize="14sp" />
 
@@ -299,19 +299,24 @@
                 <TextView
                     android:id="@+id/miniboxcurrenttime"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:fontFamily="@font/rubik"
                     android:gravity="center"
-                    android:text="TextView"
+                    android:text="0:00"
                     android:textColor="@color/white" />
-
+                <ImageView
+                    android:id="@+id/imageView39"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/smallcloud" />
                 <TextView
                     android:id="@+id/miniboxcurrenttemp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/rubik"
                     android:gravity="center"
-                    android:text="TextView"
+                    android:text="-"
                     android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
@@ -342,11 +347,18 @@
                 <TextView
                     android:id="@+id/currentplusone"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:fontFamily="@font/rubik"
                     android:gravity="center"
-                    android:text="TextView"
+                    android:text="0:00"
                     android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/smallcloud" />
 
                 <TextView
                     android:id="@+id/miniboxplusonetemp"
@@ -354,7 +366,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/rubik"
                     android:gravity="center"
-                    android:text="TextView"
+                    android:text="-"
                     android:textColor="@color/white" />
 
 
@@ -388,11 +400,18 @@
                 <TextView
                     android:id="@+id/miniboxcurrentplustwo"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:fontFamily="@font/rubik"
                     android:gravity="center"
-                    android:text="TextView"
+                    android:text="0:00"
                     android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/imageView49"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/smallcloud" />
 
                 <TextView
                     android:id="@+id/miniboxplustwotemp"
@@ -400,7 +419,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/rubik"
                     android:gravity="center"
-                    android:text="TextView"
+                    android:text="-"
                     android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
@@ -430,11 +449,17 @@
                 <TextView
                     android:id="@+id/miniboxcurrenttimeplusthree"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:fontFamily="@font/rubik"
                     android:gravity="center"
-                    android:text="TextView"
+                    android:text="0:00"
                     android:textColor="@color/white" />
+                <ImageView
+                    android:id="@+id/imageView99"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/smallcloud" />
 
                 <TextView
                     android:id="@+id/miniboxplusthreetemp"
@@ -442,7 +467,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/rubik"
                     android:gravity="center"
-                    android:text="TextView"
+                    android:text="-"
                     android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>

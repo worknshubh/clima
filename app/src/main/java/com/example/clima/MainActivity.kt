@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+                var user_name = findViewById<TextView>(R.id.user_name)
         tempcurrent = findViewById(R.id.tempcurrent)
         wind_speed = findViewById(R.id.windspeed)
         humidity = findViewById(R.id.humidity)
@@ -71,6 +72,7 @@ class MainActivity : AppCompatActivity() {
         var searchfield = findViewById<EditText>(R.id.searchfield)
         var searchbtn = findViewById<ImageView>(R.id.searchicon)
         apikey = constant.api_key
+                user_name.text = constant.username
         city = "Kolkata"
         days = "3"
         todayforecast.setTextColor(ContextCompat.getColor(this,R.color.mygrey))
@@ -121,7 +123,7 @@ class MainActivity : AppCompatActivity() {
                         "Cloudy"->{lottieAnimationView.setAnimation(R.raw.cloudy)
                             lottieAnimationView.playAnimation()
                         }
-                        "Light rain","Moderate rain","Heavy rain","Drizzle","Light rain shower","Moderate or heavy rain shower","Torrential rain shower","Patchy light rain"->{lottieAnimationView.setAnimation(R.raw.rain)
+                        "Light rain","Moderate rain","Heavy rain","Drizzle","Light rain shower","Moderate or heavy rain shower","Torrential rain shower","Patchy light rain","Moderate or heavy rain with thunder"->{lottieAnimationView.setAnimation(R.raw.rain)
                             lottieAnimationView.playAnimation()
                         }
                         "Light snow","Moderate snow","Heavy snow"->{lottieAnimationView.setAnimation(R.raw.snow)
